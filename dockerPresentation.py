@@ -165,3 +165,29 @@ with st.expander('Examples'):
     CMD python /app/app.py
     # specifies what command to run within the container.
     ''', language='docker')
+
+with st.expander('Demo'):
+    """
+    ### Use case demo
+    We wanted to share one cool use case of a docker container so you will want to clone these repos
+    onto your local machine if you have not already. 
+
+    - [Docker Tutorial Repo](https://github.com/Iolaveson/Docker_tutorial)
+
+    - [Target Challenge Repo](https://github.com/byuibigdata/target_challenge_fa23)
+
+    #### Instructions
+
+    1. Build a container using the steps outlined here [Docker Tutorial Repo](https://github.com/Iolaveson/Docker_tutorial)
+    2. Run the container you just made.
+    3. Upload the file (two ways)
+        a) Command line
+            1. Open a command line and run the following command: """
+    st.code('''
+    docker cp /YOURPATH/target_challenge_fa23/marquet/munging_final.ipynb CONTAINER:/example.ipynb
+    ''', language='docker')
+    """
+        b) UI
+            1. Go to your file browser inside your container
+            2. click the upload button and upload your files
+    """
