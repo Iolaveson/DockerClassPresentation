@@ -182,11 +182,8 @@ with st.expander('Demo'):
     2. Run the container you just made.
     3. Upload the file (two ways)
         a) Command line
-            1. Open a command line and run the following command: """
-    st.code('''
-    docker cp /YOURPATH/target_challenge_fa23/marquet/munging_final.ipynb CONTAINER:/example.ipynb
-    ''', language='docker')
-    """
+            1. Open a command line and run the following command:
+            2. `docker cp /YOURPATH/target_challenge_fa23/marquet/munging_final.ipynb CONTAINER:/example.ipynb`
         b) UI
             1. Go to your file browser inside your container
             2. click the upload button and upload your files
